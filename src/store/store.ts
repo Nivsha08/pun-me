@@ -1,9 +1,9 @@
 import Vue from 'vue';
-import Vuex from 'vuex';
+import Vuex, { StoreOptions } from 'vuex';
 
 Vue.use(Vuex);
 
-const store: Vuex.Store = new Vuex.Store({
+const store: any = new Vuex.Store({
     state: {
         loading: false,
         joke: ""
